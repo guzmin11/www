@@ -472,6 +472,51 @@
             margin-top: 40px;
         }
 
+        .steps-compare {
+            display: grid;
+            grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+            gap: 18px;
+            align-items: stretch;
+            margin-top: 40px;
+        }
+
+        .steps-column {
+            border-radius: 24px;
+            padding: 22px;
+        }
+
+        .steps-column.before-column {
+            background: #fff1f2;
+            border: 1px solid #fecdd3;
+        }
+
+        .steps-column.after-column {
+            background: #ecfdf5;
+            border: 1px solid #bbf7d0;
+        }
+
+        .steps-column-label {
+            display: inline-block;
+            font-size: 13px;
+            font-weight: 800;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            margin-bottom: 16px;
+        }
+
+        .before-column .steps-column-label {
+            color: #dc2626;
+        }
+
+        .after-column .steps-column-label {
+            color: #16a34a;
+        }
+
+        .steps-column-grid {
+            display: grid;
+            gap: 16px;
+        }
+
         .step-card {
             background: white;
             padding: 30px;
@@ -480,9 +525,32 @@
             text-align: center;
         }
 
+        .steps-column .step-card {
+            text-align: left;
+            padding: 22px 20px;
+            border-radius: 18px;
+            box-shadow: 0 10px 24px rgba(15, 23, 42, 0.06);
+        }
+
+        .before-column .step-card {
+            border-color: #fecaca;
+            background: rgba(255,255,255,0.88);
+        }
+
+        .after-column .step-card {
+            border-color: #bbf7d0;
+            background: rgba(255,255,255,0.92);
+        }
+
         .step-icon {
             font-size: 48px;
             margin-bottom: 15px;
+        }
+
+        .steps-column .step-icon {
+            font-size: 34px;
+            line-height: 1;
+            margin-bottom: 12px;
         }
 
         .step-label {
@@ -507,6 +575,30 @@
             font-size: 15px;
             color: #555;
             line-height: 1.7;
+        }
+
+        .steps-arrow {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #94a3b8;
+            font-size: 54px;
+            font-weight: 800;
+            line-height: 1;
+            padding: 0 4px;
+        }
+
+        .steps-arrow-mobile {
+            display: none;
+        }
+
+        .steps-proof {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 18px;
+            line-height: 1.6;
+            color: #374151;
+            font-weight: 600;
         }
 
         /* Bonuses Section */
@@ -1234,6 +1326,40 @@
                 margin-bottom: 28px;
             }
 
+            .steps-compare {
+                grid-template-columns: 1fr;
+                gap: 14px;
+                margin-top: 30px;
+            }
+
+            .steps-arrow {
+                font-size: 40px;
+                padding: 2px 0;
+            }
+
+            .steps-arrow-desktop {
+                display: none;
+            }
+
+            .steps-arrow-mobile {
+                display: inline;
+            }
+
+            .steps-column {
+                padding: 18px;
+                border-radius: 20px;
+            }
+
+            .steps-column .step-card {
+                padding: 18px 16px;
+            }
+
+            .steps-proof {
+                font-size: 16px;
+                line-height: 1.55;
+                margin-top: 18px;
+            }
+
             .price-main {
                 font-size: 56px;
             }
@@ -1552,6 +1678,16 @@
                 font-size: 27px;
             }
 
+            .steps-column-label {
+                font-size: 12px;
+                margin-bottom: 14px;
+            }
+
+            .steps-column .step-icon {
+                font-size: 30px;
+                margin-bottom: 10px;
+            }
+
             .basic-plan-card {
                 width: 82% !important;
                 max-width: 82% !important;
@@ -1707,7 +1843,7 @@
     <section class="features">
         <div class="container">
             <h2 class="section-title">O que existe dentro do material</h2>
-            <p style="color: #666; margin-top: -16px; margin-bottom: 24px; font-size: 16px; text-align: center;">Material organizado para professores que trabalham com crianças, adolescentes ou adultos em aulas de música e instrumentos.</p>
+            <p style="color: #666; margin-top: -16px; margin-bottom: 24px; font-size: 16px; text-align: center;">Material organizado com dinâmicas e atividades para professores que trabalham com crianças, adolescentes ou adultos em aulas de música e instrumentos.</p>
             <div class="carousel-container">
                 <div class="carousel-track">
                     <div class="carousel-item">
@@ -1718,26 +1854,26 @@
                     </div>
                     <div class="carousel-item">
                         <div class="carousel-image">
-                            <img src="som_e_emoção.png" alt="Som e Emoção">
-                            <div class="carousel-label">Som e Emoção</div>
+                            <img src="02_Atividades_Simples_Exercicios.pdf.png" alt="Atividades Simples e Exercícios">
+                            <div class="carousel-label">Atividades Simples e Exercícios</div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel-image">
+                            <img src="Dinamicas_Vocais_Educacao_Divertida.pdf.png" alt="Dinâmicas Vocais">
+                            <div class="carousel-label">Dinâmicas Vocais</div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel-image">
+                            <img src="01_Atividades_Para_Casa.pdf.png" alt="Atividades para Treinar em Casa">
+                            <div class="carousel-label">Atividades para Treinar em Casa</div>
                         </div>
                     </div>
                     <div class="carousel-item">
                         <div class="carousel-image">
                             <img src="reset_de_atenção.png" alt="Reset de Atenção">
                             <div class="carousel-label">Reset de Atenção</div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="carousel-image">
-                            <img src="troca_fluida_de_acordes.png" alt="Troca Fluida de Acordes">
-                            <div class="carousel-label">Troca Fluida de Acordes</div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="carousel-image">
-                            <img src="controle_de_mão_direita.png" alt="Controle de Mão Direita">
-                            <div class="carousel-label">Controle de Mão Direita</div>
                         </div>
                     </div>
 
@@ -1749,26 +1885,26 @@
                     </div>
                     <div class="carousel-item">
                         <div class="carousel-image">
-                            <img src="som_e_emoção.png" alt="Som e Emoção">
-                            <div class="carousel-label">Som e Emoção</div>
+                            <img src="02_Atividades_Simples_Exercicios.pdf.png" alt="Atividades Simples e Exercícios">
+                            <div class="carousel-label">Atividades Simples e Exercícios</div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel-image">
+                            <img src="Dinamicas_Vocais_Educacao_Divertida.pdf.png" alt="Dinâmicas Vocais">
+                            <div class="carousel-label">Dinâmicas Vocais</div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel-image">
+                            <img src="01_Atividades_Para_Casa.pdf.png" alt="Atividades para Treinar em Casa">
+                            <div class="carousel-label">Atividades para Treinar em Casa</div>
                         </div>
                     </div>
                     <div class="carousel-item">
                         <div class="carousel-image">
                             <img src="reset_de_atenção.png" alt="Reset de Atenção">
                             <div class="carousel-label">Reset de Atenção</div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="carousel-image">
-                            <img src="troca_fluida_de_acordes.png" alt="Troca Fluida de Acordes">
-                            <div class="carousel-label">Troca Fluida de Acordes</div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="carousel-image">
-                            <img src="controle_de_mão_direita.png" alt="Controle de Mão Direita">
-                            <div class="carousel-label">Controle de Mão Direita</div>
                         </div>
                     </div>
                 </div>
@@ -1796,33 +1932,44 @@
     <!-- Steps -->
     <section class="steps">
         <div class="container">
-                <h2 class="section-title">O que esse material faz na prática</h2>
-            <div class="steps-grid">
-                <div class="step-card">
-                    <div class="step-icon">01</div>
-                    <div class="step-label">ANTES</div>
-                    <h3 class="step-title">Planejamento que suga seu tempo</h3>
-                    <p class="step-description">Você gasta energia demais tentando montar aula, adaptar atividade e manter a turma interessada.</p>
+            <h2 class="section-title">O que muda na sua rotina depois que esse material entra nas suas aulas</h2>
+            <div class="steps-compare">
+                <div class="steps-column before-column">
+                    <div class="steps-column-label">ANTES</div>
+                    <div class="steps-column-grid">
+                        <div class="step-card">
+                            <div class="step-icon">⏳</div>
+                            <h3 class="step-title">Planejar aula de música toma mais de 2 horas por semana</h3>
+                            <p class="step-description">Você gasta energia demais procurando ideias, adaptando atividades e ainda fica com dúvida se vai funcionar ou não.</p>
+                        </div>
+                        <div class="step-card">
+                            <div class="step-icon">😮‍💨</div>
+                            <h3 class="step-title">Toda aula você precisa inventar algo na hora</h3>
+                            <p class="step-description">Quando não tem material pronto, a aula fica mais vulnerável ao improviso e ao cansaço, tanto seu quanto da turma.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="step-card">
-                    <div class="step-icon">02</div>
-                    <div class="step-label">ANTES</div>
-                    <h3 class="step-title">Aula dependente da ideia do dia</h3>
-                    <p class="step-description">Quando você não tem um material pronto, a aula fica mais vulnerável ao improviso e ao cansaço.</p>
+                <div class="steps-arrow" aria-hidden="true">
+                    <span class="steps-arrow-desktop">→</span>
+                    <span class="steps-arrow-mobile">↓</span>
                 </div>
-                <div class="step-card">
-                    <div class="step-icon">03</div>
-                    <div class="step-label">DEPOIS</div>
-                    <h3 class="step-title">Menos tempo pensando. Mais tempo aplicando.</h3>
-                    <p class="step-description">Você abre o material, escolhe a dinâmica certa e corta boa parte do esforço de planejar tudo do zero.</p>
-                </div>
-                <div class="step-card">
-                    <div class="step-icon">04</div>
-                    <div class="step-label">DEPOIS</div>
-                    <h3 class="step-title">Aulas mais leves, variadas e envolventes</h3>
-                    <p class="step-description">Você conduz com mais segurança, varia melhor a experiência do aluno e sai da aula menos esgotada.</p>
+                <div class="steps-column after-column">
+                    <div class="steps-column-label">DEPOIS</div>
+                    <div class="steps-column-grid">
+                        <div class="step-card">
+                            <div class="step-icon">⚡</div>
+                            <h3 class="step-title">Escolha a dinâmica certa em menos de 60 segundos</h3>
+                            <p class="step-description">Você abre o material, seleciona uma atividade e aplica imediatamente. Zero tempo perdido planejando do zero.</p>
+                        </div>
+                        <div class="step-card">
+                            <div class="step-icon">🎶</div>
+                            <h3 class="step-title">Aulas mais leves, variadas e com alunos mais envolvidos</h3>
+                            <p class="step-description">Você conduz com segurança, varia melhor a experiência e sai da aula com energia, e não exausta.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
+            <p class="steps-proof">É exatamente essa transformação que mais de <strong>2.789</strong> professoras já estão vivendo.</p>
         </div>
     </section>
 
