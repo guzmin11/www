@@ -683,6 +683,74 @@
             text-align: left;
         }
 
+        .proof-wall {
+            padding: 18px 20px 28px;
+            background: white;
+            border-top: 1px solid #ececec;
+            margin-top: 8px;
+        }
+
+        .proof-wall-header {
+            max-width: 760px;
+            margin: 0 auto 24px;
+            text-align: center;
+        }
+
+        .proof-wall-title {
+            font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            font-size: 28px;
+            font-weight: 900;
+            color: #111;
+            margin-bottom: 10px;
+            letter-spacing: -0.02em;
+        }
+
+        .proof-wall-subtitle {
+            color: #666;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        .proof-wall-grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 20px;
+            align-items: start;
+            max-width: 1080px;
+            margin: 0 auto;
+        }
+
+        .proof-wall-item {
+            background: #fff;
+            border: 1px solid #ececec;
+            border-radius: 22px;
+            padding: 10px;
+            box-shadow: 0 12px 30px rgba(15, 23, 42, 0.08);
+            overflow: hidden;
+        }
+
+        .proof-wall-item:nth-child(1) {
+            transform: rotate(-1.5deg);
+            margin-top: 10px;
+        }
+
+        .proof-wall-item:nth-child(2) {
+            transform: rotate(0.8deg);
+        }
+
+        .proof-wall-item:nth-child(3) {
+            transform: rotate(-0.9deg);
+            margin-top: 8px;
+        }
+
+        .proof-wall-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 16px;
+            background: #fafafa;
+        }
+
         .content-preview {
             padding: 60px 20px;
             background: white;
@@ -831,7 +899,7 @@
         }
 
         .pricing-feature.bonus-heading {
-            color: #e63946;
+            color: #ff6b35;
             font-weight: 800;
             font-size: 17px;
             margin-top: 8px;
@@ -852,6 +920,40 @@
             display: inline-block;
             white-space: nowrap;
             margin-right: 6px;
+        }
+
+        .pricing-feature.gift-highlight {
+            display: block;
+            background: linear-gradient(180deg, #fff8eb 0%, #fff3dc 100%);
+            border: 1px solid #ffd7a1;
+            border-radius: 14px;
+            padding: 12px 14px;
+            color: #6b4b16;
+            box-shadow: 0 8px 18px rgba(255, 176, 74, 0.14);
+            line-height: 1.45;
+        }
+
+        .pricing-feature.gift-highlight::before {
+            content: '';
+            width: 0;
+            margin: 0;
+        }
+
+        .pricing-feature.gift-highlight strong {
+            color: #111;
+        }
+
+        .pricing-feature.gift-highlight .gift-title {
+            display: block;
+            margin-bottom: 8px;
+            color: #ff6b35;
+            font-weight: 900;
+        }
+
+        .pricing-feature.gift-highlight .gift-line {
+            display: block;
+            color: #5b4630;
+            margin-top: 4px;
         }
 
         .price-original {
@@ -1360,6 +1462,32 @@
                 margin-top: 18px;
             }
 
+            .proof-wall {
+                padding: 14px 16px 24px;
+            }
+
+            .proof-wall-grid {
+                grid-template-columns: 1fr;
+                gap: 14px;
+            }
+
+            .proof-wall-item,
+            .proof-wall-item:nth-child(1),
+            .proof-wall-item:nth-child(2),
+            .proof-wall-item:nth-child(3) {
+                transform: none;
+                margin-top: 0;
+            }
+
+            .proof-wall-title {
+                font-size: 24px;
+            }
+
+            .proof-wall-subtitle {
+                font-size: 15px;
+                line-height: 1.55;
+            }
+
             .price-main {
                 font-size: 56px;
             }
@@ -1678,6 +1806,11 @@
                 font-size: 27px;
             }
 
+            .proof-wall-item {
+                padding: 8px;
+                border-radius: 18px;
+            }
+
             .steps-column-label {
                 font-size: 12px;
                 margin-bottom: 14px;
@@ -1809,7 +1942,7 @@
     alt=""></noscript>
     <!-- Header Countdown -->
     <div class="header-countdown">
-        OFERTA DISPONÍVEL APENAS HOJE - 08/05/2026
+        OFERTA DISPONÍVEL APENAS HOJE - 11/05/2026
     </div>
 
     <!-- Hero -->
@@ -2000,7 +2133,7 @@
         <div class="container">
             <div class="bonus-header">
                 <h2 class="section-title">No plano completo, você não recebe só as dinâmicas</h2>
-                <div class="bonus-badge"><strong>5 BÔNUS INCLUSOS + OUTROS EXTRAS</strong></div>
+                <div class="bonus-badge"><strong>6 BÔNUS INCLUSOS + OUTROS EXTRAS</strong></div>
             </div>
             <div class="bonuses-grid">
                 <div class="bonus-card">
@@ -2032,8 +2165,8 @@
                 </div>
                 <div class="bonus-card">
                     <div class="bonus-label">BÔNUS 04</div>
-                    <h3 class="bonus-title">GUIA PARA ALUNOS DESANIMADOS OU TRAVADOS</h3>
-                    <p class="bonus-description">Estratégias simples para recuperar participação quando a aula esfria.</p>
+                    <h3 class="bonus-title">+50 DINÂMICAS PARA ALUNOS COM DIFICULDADES, TEA E AUTISMO</h3>
+                    <p class="bonus-description">Sugestões práticas para conduzir melhor aulas com alunos que precisam de mais adaptação, atenção e apoio.</p>
                     <div class="bonus-value">
                         <div class="bonus-price">R$27</div>
                         <div class="bonus-free">INCLUÍDO NO PLANO COMPLETO</div>
@@ -2048,8 +2181,37 @@
                         <div class="bonus-free">INCLUÍDO NO PLANO COMPLETO</div>
                     </div>
                 </div>
+                <div class="bonus-card">
+                    <div class="bonus-label">BÔNUS 06</div>
+                    <h3 class="bonus-title">MATERIAL DE APOIO ÀS DINÂMICAS</h3>
+                    <p class="bonus-description">Imprimíveis e apoios práticos para ajudar você a aplicar as dinâmicas com mais clareza e facilidade.</p>
+                    <div class="bonus-value">
+                        <div class="bonus-price">R$37</div>
+                        <div class="bonus-free">INCLUÍDO NO PLANO COMPLETO</div>
+                    </div>
+                </div>
             </div>
             <p style="color: #666; margin-top: 30px; font-size: 16px; text-align: center;">Tudo pensado para reduzir improviso, acelerar sua preparação e deixar suas aulas mais claras, variadas e profissionais.</p>
+        </div>
+    </section>
+
+    <section class="proof-wall">
+        <div class="container">
+            <div class="proof-wall-header">
+                <h2 class="proof-wall-title">Professoras que já aplicam e confiam</h2>
+                <p class="proof-wall-subtitle">Prints reais ajudam a responder a dúvida mais importante antes da oferta: se o material é fácil de usar, funciona na prática e ainda abre novas ideias na hora da aula.</p>
+            </div>
+            <div class="proof-wall-grid">
+                <div class="proof-wall-item">
+                    <img src="depoimento_1.png" alt="Depoimento de professora sobre o material">
+                </div>
+                <div class="proof-wall-item">
+                    <img src="depoimento_2.png" alt="Depoimento de professora sobre o material">
+                </div>
+                <div class="proof-wall-item">
+                    <img src="depoimento_3.png" alt="Depoimento de professora sobre o material">
+                </div>
+            </div>
         </div>
     </section>
 
@@ -2061,7 +2223,7 @@
                     <div class="pricing-label" style="background:#8d99ae;">PLANO DE ENTRADA</div>
                     <div class="pricing-urgency">ACESSO ESSENCIAL</div>
                     <h2 class="pricing-title">+150 Dinâmicas</h2>
-                    <div class="pricing-includes">Para quem quer começar pelo núcleo do material e já parar de travar toda semana pensando no que aplicar.</div>
+                    <div class="pricing-includes">Para começar com as dinâmicas prontas e já parar de travar pensando no que aplicar.</div>
                     <div class="pricing-features">
                         <div class="pricing-feature">Aplicação prática e imediata</div>
                         <div class="pricing-feature">Acesso digital após a compra</div>
@@ -2072,7 +2234,7 @@
                         <p class="price-intro">Comece por</p>
                         <div class="price-original" style="display:block; margin-right:0; margin-bottom:8px;">De R$52,00</div>
                         <div class="price-main">R$12,90</div>
-                        <p class="price-installment">Resolva o básico primeiro: tenha o que aplicar sem perder tanto tempo planejando sozinha.</p>
+                        <p class="price-installment">Tenha o que aplicar e reduza o improviso já nas próximas aulas.</p>
                     </div>
                     <a class="btn-primary basic-plan-trigger" data-track="checkout-basico" style="width: 100%;" href="https://checkout.educacaodivertida.site/VCCL1O8SD16K">QUERO COMEÇAR PELO ESSENCIAL</a>
                 </div>
@@ -2080,25 +2242,32 @@
                     <div class="pricing-label" style="background:#2ecc71;">PLANO RECOMENDADO</div>
                     <div class="pricing-urgency">PLANO COMPLETO</div>
                     <h2 class="pricing-title">+400 Recursos Musicais</h2>
-                    <div class="pricing-includes"><strong style="color:#111;">Mais recurso na mão. Menos desgaste mental.</strong><br>Inclui as dinâmicas, os bônus e os materiais de apoio para você planejar mais rápido e não carregar a aula inteira sozinha.</div>
+                    <div class="pricing-includes"><strong style="color:#111;">Mais recurso na mão. Menos desgaste mental.</strong><br>É a versão para quem quer parar de planejar tudo do zero e ter material para o ano todo.</div>
                     <div class="pricing-features">
-                        <div class="pricing-feature primary-offer">Tudo do básico + todos os bônus</div>
-                        <div class="pricing-feature">Planejamento mais rápido</div>
-                        <div class="pricing-feature">Mais variação de aula</div>
+                        <div class="pricing-feature primary-offer">Tudo do essencial + 6 bônus inclusos</div>
+                        <div class="pricing-feature gift-highlight">
+                            <strong class="gift-title">MAIS BUSCADOS 🔥</strong>
+                            <span class="gift-line">🎁 +50 dinâmicas para alunos com dificuldades, TEA e autismo</span>
+                            <span class="gift-line">🎁 Planejamento de aulas para o ano todo</span>
+                            <span class="gift-line">🎁 Guia para alunos travados ou desanimados</span>
+                        </div>
+                        <div class="pricing-feature">Planejamento mais rápido e mais leve</div>
+                        <div class="pricing-feature">Mais variação de aula sem inventar tudo</div>
                         <div class="pricing-feature">Mais segurança na condução</div>
                         <div class="pricing-feature">Mais participação dos alunos</div>
                         <div class="pricing-feature">Acesso digital imediato</div>
-                        <div class="pricing-feature">Material para usar a semana inteira, não só uma vez</div>
+                        <div class="pricing-feature">Material para usar o ano todo</div>
                         <div class="pricing-feature">Garantia de 7 dias</div>
                     </div>
                     <div style="text-align: center; margin: 30px 0;">
                         <p class="price-intro">Leve o material completo por</p>
                         <div class="price-original" style="display:block; margin-right:0; margin-bottom:8px;">De R$237,90</div>
                         <div class="price-main">R$29,90</div>
-                        <p class="price-installment">Se você quer parar de montar tudo do zero e recuperar horas de preparação, essa é a versão certa.</p>
-                        <div class="savings-badge">A escolha de quem quer economizar tempo de verdade</div>
+                        <p class="price-intro" style="margin-top:-2px; margin-bottom:10px;">ou 2x de R$16,17</p>
+                        <p class="price-installment">Se você quer economizar horas de preparação e dar aulas com mais clareza, essa é a versão certa.</p>
+                        <div class="savings-badge">A escolha de quem quer economizar tempo e evitar improviso</div>
                     </div>
-                    <a class="btn-primary" data-track="checkout-completo" style="width: 100%; font-size: 20px; padding: 22px 28px; border-radius: 16px;" href="https://checkout.educacaodivertida.site/VCCL1O8SCXTF">QUERO O PLANO COMPLETO</a>
+                    <a class="btn-primary" data-track="checkout-completo" style="width: 100%; font-size: 20px; padding: 22px 28px; border-radius: 16px;" href="https://checkout.educacaodivertida.site/VCCL1O8SCXTF">QUERO MINHAS AULAS PRONTAS</a>
                     <div style="display:flex; align-items:center; justify-content:center; gap:14px; margin-top:24px; flex-wrap:wrap;">
                         <div style="display:flex; align-items:center;">
                             <img src="foto_oferta1.png" alt="Professora usando o material" style="width:34px; height:34px; border-radius:999px; border:2px solid #22c55e; object-fit:cover; background:#f8fafc;">
@@ -2225,27 +2394,27 @@ Ter um material pronto me deu clareza e tirou um peso enorme do planejamento.</p
             <div class="faq-list">
                 <details class="faq-item">
                     <summary>Como recebo o material?</summary>
-                    <div class="faq-answer">Assim que o pagamento é confirmado, você recebe o acesso ao material em formato digital e já pode começar a usar.</div>
+                    <div class="faq-answer">Assim que o pagamento for confirmado, o acesso ao material é enviado para o seu e-mail e você já pode começar a usar.</div>
                 </details>
                 <details class="faq-item">
                     <summary>Serve para qual idade?</summary>
-                    <div class="faq-answer">Você pode usar com crianças, iniciantes, turmas e também adaptar para diferentes faixas etárias e níveis.</div>
+                    <div class="faq-answer">O material tem foco principal em crianças, mas também pode ser adaptado para adolescentes, jovens e adultos, tanto em aulas individuais quanto em grupo.</div>
                 </details>
                 <details class="faq-item">
                     <summary>Preciso saber teoria musical?</summary>
-                    <div class="faq-answer">Não. O material foi pensado para facilitar sua condução prática em aula, com ideias simples, diretas e feitas por professora para professora.</div>
+                    <div class="faq-answer">Não. O material foi pensado para facilitar sua condução prática em aula, com explicações simples e aplicação real, mesmo para quem não quer depender de teoria o tempo todo.</div>
                 </details>
                 <details class="faq-item">
                     <summary>Funciona para aula individual e em grupo?</summary>
-                    <div class="faq-answer">Sim. As dinâmicas podem ser usadas tanto em aulas individuais quanto em grupo, com adaptação simples.</div>
+                    <div class="faq-answer">Sim. Você pode usar em aula individual, em grupo, em escola e também adaptar conforme idade, perfil da turma e objetivo da aula.</div>
                 </details>
                 <details class="faq-item">
                     <summary>O acesso é imediato?</summary>
-                    <div class="faq-answer">Sim. Confirmou o pagamento, o acesso é liberado para você consultar o material sem demora.</div>
+                    <div class="faq-answer">Sim. Assim que o pagamento for confirmado, o acesso é enviado para o seu e-mail para você começar a usar sem demora.</div>
                 </details>
                 <details class="faq-item">
                     <summary>Tem garantia?</summary>
-                    <div class="faq-answer">Tem sim. Você tem 7 dias para testar com tranquilidade e pedir reembolso se sentir que o material não ajuda sua rotina.</div>
+                    <div class="faq-answer">Tem sim. Você tem 7 dias para testar com tranquilidade e pedir reembolso se sentir que o material não facilita sua rotina de aula.</div>
                 </details>
             </div>
         </div>
@@ -2304,18 +2473,18 @@ Ter um material pronto me deu clareza e tirou um peso enorme do planejamento.</p
     <div id="upgrade-popup" style="display:none; position:fixed; inset:0; background:rgba(0,0,0,0.6); z-index:9999; padding:10px; align-items:center; justify-content:center;">
         <div style="width:100%; max-width:360px; max-height:calc(100vh - 20px); overflow:hidden; background:#fff; border-radius:20px; padding:16px 14px 14px; text-align:center; position:relative; box-shadow:0 20px 50px rgba(0,0,0,0.25);">
             <button type="button" id="close-upgrade-popup" aria-label="Fechar popup" style="position:absolute; top:12px; right:14px; border:none; background:transparent; font-size:28px; line-height:1; cursor:pointer; color:#666;">×</button>
-            <div class="pricing-label" style="display:inline-block; margin-bottom:10px; font-size:12px; padding:8px 12px;">ATUALIZAÇÃO DE PLANO</div>
+            <div class="pricing-label" style="display:inline-block; margin-bottom:10px; font-size:12px; padding:8px 12px;">UPGRADE DO PLANO</div>
             <div style="color:#dc2626; font-size:12px; font-weight:800; text-transform:uppercase; letter-spacing:0.04em; margin-top:-2px;">Condição disponível por poucos minutos</div>
             <div id="popup-countdown" style="color:#dc2626; font-family:'Poppins', sans-serif; font-size:22px; font-weight:800; margin:4px 0 10px;">05:00</div>
-            <h2 style="font-family:'Poppins', sans-serif; font-size:20px; line-height:1.04; color:#111; margin-bottom:10px;">Por só <span style="color:#16a34a;">+R$7</span>, você leva a versão que mais alivia sua rotina</h2>
+            <h2 style="font-family:'Poppins', sans-serif; font-size:20px; line-height:1.04; color:#111; margin-bottom:10px;">Por só <span style="color:#16a34a;">+R$7</span>, você sai do essencial e leva o completo</h2>
             <p style="color:#555; font-size:13px; line-height:1.4; margin-bottom:10px;">Você escolheu a versão essencial com +150 dinâmicas.</p>
             <div style="color:#222; font-size:14px; line-height:1.45; margin:0 auto 12px; max-width:310px;">
-                Por mais R$7, você leva a versão completa com <span style="color:#16a34a; font-weight:800;">+400 recursos musicais</span> para planejar mais rápido, travar menos na aula e não precisar pensar em tudo sozinha.
+                Antes de finalizar, você pode liberar <span style="color:#16a34a; font-weight:800;">+400 recursos musicais</span> e não ficar sem os bônus mais buscados do plano completo.
             </div>
-            <div style="display:grid; gap:6px; justify-content:center; color:#16a34a; font-size:14px; font-weight:800; margin-bottom:12px; text-align:left; max-width:200px; margin-left:auto; margin-right:auto;">
-                <span>✓ Mais recursos de aula</span>
-                <span>✓ Mais clareza na condução</span>
-                <span>✓ Menos tempo preparando tudo sozinha</span>
+            <div style="display:grid; gap:8px; justify-content:center; color:#222; font-size:14px; font-weight:700; margin-bottom:12px; text-align:left; max-width:265px; margin-left:auto; margin-right:auto;">
+                <span><span style="color:#16a34a; font-weight:900;">✓</span> +50 dinâmicas para alunos com dificuldades, TEA e autismo</span>
+                <span><span style="color:#16a34a; font-weight:900;">✓</span> Planejamento para o ano todo</span>
+                <span><span style="color:#16a34a; font-weight:900;">✓</span> Guia para alunos travados ou desanimados</span>
             </div>
             <a class="btn-primary" data-track="checkout-upsell-completo" style="width:100%; margin-bottom:8px; padding:15px 14px; border-radius:14px; font-size:15px; line-height:1.2;" href="https://checkout.educacaodivertida.site/VCCL1O8SD16L">QUERO LIBERAR O COMPLETO POR <span style="color:#ffffff;">R$19,90</span></a>
             <a class="btn-primary" data-track="checkout-upsell-basico" style="width:100%; background:#efefef; color:#222; box-shadow:none; padding:13px 14px; border-radius:14px; font-size:14px; line-height:1.2;" href="https://checkout.educacaodivertida.site/VCCL1O8SD16K">Não, quero ficar só com as dinâmicas</a>
